@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            background-color: #FFF5FF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .login-box {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            margin-top: 20px;
+        }
+        .login-box h2 {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        .login-box label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .login-box input[type="text"],
+        .login-box input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .login-box input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .login-box input[type="submit"]:hover {
+            background-color: #555;
+        }
+        .login-box a {
+            display: block; /* Para que o link ocupe toda a área */
+            margin-top: 10px;
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+            text-align: center; /* Centraliza o texto */
+        }
+        .login-box a:hover {
+            text-decoration: underline;
+        }
+        .logo {
+            width: 100px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./img/book.png" alt="book" class="logo">
+        <div class="login-box">
+            <label for="matricula">Matricula</label>
+            <input id="matricula" name="matricula" placeholder="matricula" type="text" />
+            <label for="senha">Senha</label>
+            <input id="senha" name="senha" type="password" />
+            <input type="submit" value="Entrar" onclick="window.location.href='LINK_DA_PAGINA_ENTRAR';" /> <!-- Substitua pelo link da página de entrada -->
+            <a href="LINK_DA_PAGINA_ESQUECEU_SENHA">Esqueceu a senha?</a> <!-- Substitua pelo link da página de recuperação -->
+        </div>
+    </div>
+</body>
+</html>
